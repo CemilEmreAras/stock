@@ -1,0 +1,137 @@
+  VITE v6.2.0  ready in 217 ms  ➜  Local:   http://localhost:5173/  ➜  Network: use --host to expose  ➜  press h + enter to show help6:22:53 PM [vite] (client) hmr update /src/App.jsx6:23:56 PM [vite] (client) hmr update /src/App.css
+6:23:56 PM [vite] (client) page reload src/main.jsx
+6:23:56 PM [vite] (client) hmr update /src/index.css
+6:25:32 PM [vite] (client) hmr update /src/components/Navbar.jsx, /src/index.css
+6:26:09 PM [vite] vite.config.js changed, restarting server...
+6:26:09 PM [vite] (client) page reload package.json
+6:26:09 PM [vite] (client) page reload tailwind.config.js
+6:26:09 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+6:26:09 PM [vite] server restarted.
+6:26:09 PM [vite] (client) Pre-transform error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip)
+6:26:09 PM [vite] (client) Pre-transform error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css
+6:26:09 PM [vite] (client) Pre-transform error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip)
+6:26:09 PM [vite] (client) Pre-transform error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css (x2)
+6:26:09 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Erro
+6:26:09 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css
+6:26:09 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Erro
+6:26:09 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css (x2)
+6:26:18 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Erro
+6:26:18 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css (x3)
+6:26:18 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Erro
+6:26:18 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css (x4)
+6:27:17 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Erro
+6:27:17 PM [vite] Internal server error: Failed to load PostCSS config (searchPath: /Users/emre/Desktop/takip): [Error] Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+Error: Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+Require stack:
+- /Users/emre/Desktop/takip/postcss.config.js
+
+(@/Users/emre/Desktop/takip/postcss.config.js)
+    at load (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14869:11)
+    at async Promise.all (index 1)
+    at async plugins (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14898:12)
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969
+    at async processResult (file:///Users/emre/Desktop/takip/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js:14969:14)
+  Plugin: vite:css
+  File: /Users/emre/Desktop/takip/src/index.css (x5)
+^Z
+rm -rf node_modules package-lock.json
