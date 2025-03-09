@@ -1,29 +1,34 @@
 import { useState } from 'react'
 
-const Products = ({ products }) => {
+const Products = ({ products, cartItems, setCartItems }) => {
   const [filters, setFilters] = useState({
     search: '',
     brand: '',
-    minPrice: '',
-    maxPrice: ''
+    category: ''
   })
 
   const [quantities, setQuantities] = useState({})
 
-  const filteredProducts = products.filter(product => {
-    return (
-      (!filters.search || 
-        product.name.toLowerCase().includes(filters.search.toLowerCase()) || 
-        product.model.toLowerCase().includes(filters.search.toLowerCase()) ||
-        product.code.toLowerCase().includes(filters.search.toLowerCase())
-      ) &&
-      (!filters.brand || product.brand === filters.brand) &&
-      (!filters.minPrice || parseFloat(product.price) >= parseFloat(filters.minPrice)) &&
-      (!filters.maxPrice || parseFloat(product.price) <= parseFloat(filters.maxPrice))
-    )
-  })
-
   const brands = [...new Set(products.map(product => product.brand))]
+  
+  const categories = [...new Set(products.map(product => {
+    return product.name.split(' ')[0]
+  }))]
+
+  const filteredProducts = products.filter(product => {
+    const searchMatch = !filters.search || 
+      product.name.toLowerCase().includes(filters.search.toLowerCase()) ||
+      product.code.toLowerCase().includes(filters.search.toLowerCase()) ||
+      product.model.toLowerCase().includes(filters.search.toLowerCase()) ||
+      product.brand.toLowerCase().includes(filters.search.toLowerCase())
+
+    const brandMatch = !filters.brand || product.brand === filters.brand
+    
+    const categoryMatch = !filters.category || 
+      product.name.toLowerCase().startsWith(filters.category.toLowerCase())
+
+    return searchMatch && brandMatch && categoryMatch
+  })
 
   const handleQuantityChange = (productId, value) => {
     setQuantities({
@@ -34,8 +39,20 @@ const Products = ({ products }) => {
 
   const addToCart = (product) => {
     const quantity = quantities[product.id] || 1
-    console.log(`${quantity} adet ${product.name} sepete eklendi`)
-    // Sepete ekleme işlemi burada yapılacak
+    const existingItem = cartItems.find(item => item.id === product.id)
+
+    if (existingItem) {
+      setCartItems(cartItems.map(item =>
+        item.id === product.id
+          ? { ...item, quantity: (item.quantity || 1) + quantity }
+          : item
+      ))
+    } else {
+      setCartItems([...cartItems, { ...product, quantity }])
+    }
+
+    setQuantities({ ...quantities, [product.id]: 1 })
+    alert('Ürün sepete eklendi!')
   }
 
   return (
@@ -65,9 +82,9 @@ const Products = ({ products }) => {
           onChange={(e) => setFilters({...filters, category: e.target.value})}
         >
           <option value="">Tüm Ürünler</option>
-          <option value="devirdaim">Devirdaim</option>
-          <option value="balata">Balata</option>
-          <option value="kafa">Kafa</option>
+          {categories.map(category => (
+            <option key={category} value={category}>{category}</option>
+          ))}
         </select>
       </div>
 

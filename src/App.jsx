@@ -6,6 +6,7 @@ import UserManagement from './components/admin/UserManagement'
 import StoreLayout from './components/store/StoreLayout'
 import ProductList from './components/store/ProductList'
 import Products from './components/store/Products'
+import Cart from './components/store/Cart'
 
 import './App.css'
 
@@ -36,18 +37,33 @@ function App() {
       code: 'FTB-010162',
       description: 'MITSUBISHI L200 2015-2023 2.4 Dizel araçlar için kapaksız devirdaim.',
       image: 'https://placehold.co/300x200?text=Devirdaim+Kapaksız'
+    },
+    {
+      id: 'BLT-001234',
+      name: 'BALATA ÖN',
+      model: 'TOYOTA HILUX 15-2.4D',
+      brand: 'BOSCH',
+      price: '45.00',
+      currency: 'USD',
+      status: true,
+      code: 'BLT-001234',
+      description: 'TOYOTA HILUX 2015-2023 2.4 Dizel araçlar için ön fren balatası.',
+      image: 'https://placehold.co/300x200?text=Balata'
     }
     // Diğer ürünler...
   ])
+  const [cartItems, setCartItems] = useState([])
 
   const renderStoreContent = () => {
     switch(currentPage) {
       case 'home':
-        return <ProductList products={products} />
+        return <ProductList setCurrentPage={setCurrentPage} />
       case 'products':
-        return <Products products={products} />
+        return <Products products={products} cartItems={cartItems} setCartItems={setCartItems} />
+      case 'cart':
+        return <Cart cartItems={cartItems} setCartItems={setCartItems} />
       default:
-        return <ProductList products={products} />
+        return <ProductList setCurrentPage={setCurrentPage} />
     }
   }
 
